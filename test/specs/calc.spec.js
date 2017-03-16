@@ -10,14 +10,40 @@
         expect(result).to.be.a('number');
         expect(result).to.equal(2);
       });
-      it('should return a number when only one number is passed', function(){
+
+
+      it('should return 1 if the number one is passed', function(){
         let result = window.calc.sum([1]);
          expect(result).to.be.a('number');
-         expect(results).to.equal(1);
+         expect(result).to.equal(1);
       });
+      it('should return Nan', function(){
+         let result = window.calc.sum(['e', 'b']);
+         expect(result).to.be.NaN;
+       });
+      // it('', function(){
+      //   let result = window.calc.sum([]);
+      //   expect(result).to.be.a('number');
+      //   expect(result).to.be.equal();
+      // });
+      // it('', function(){
+      //   let result = window.calc.sum([]);
+      //   expect(result).to.be.a('number');
+      //   expect(result).to.be.equal();
+      // });
+      // it('', function(){
+      //   let result = window.calc.sum([]);
+      //   expect(result).to.be.a('number');
+      //   expect(result).to.be.equal();
+      // });
+      // it('', function(){
+      //   let result = window.calc.sum([]);
+      //   expect(result).to.be.a('number');
+      //   expect(result).to.be.equal();
+      // });
 
 
-      
+
 
 
 
