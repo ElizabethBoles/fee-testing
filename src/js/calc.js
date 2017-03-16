@@ -31,7 +31,12 @@
      */
     window.calc.factor = function factorial(topNumber) {
         let total = 1;
-
+        //checks if the arg is a string
+        if (typeof(topNumber) === 'string') {
+            topNumber = parseInt(topNumber);
+        //if you're given string '3' it'll turn it into #3
+        }
+        //checking that top number is actually a number
         if (typeof(topNumber) !== 'number') {
             return 0;
         }
@@ -44,3 +49,16 @@
     };
 
 })();
+
+// total = 1
+//
+// 1 2 3 4
+//
+//
+// 1 * 1 = 1
+//
+// 1 * 2 = 2
+//
+// 2 * 3 = 6
+//
+// 6 * 4 = 24

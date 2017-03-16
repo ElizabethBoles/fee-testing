@@ -25,22 +25,26 @@
         expect(result).to.be.equal(0);
       });
       //----------------2nd----------------
-      it('should return 6 if the number 3 is passed', function(){
+      it('should return 24 if the number 4 is passed', function(){
         let result = window.calc.factor(4);
         expect(result).to.be.a('number');
         expect(result).to.be.equal(24);
       });
-      // it('', function(){
-      //   let result = window.calc.factor([]);
-      //   expect(result).to.be.a('number');
-      //   expect(result).to.be.equal();
-      // });
-      // it('', function(){
-      //   let result = window.calc.factor([]);
-      //   expect(result).to.be.a('number');
-      //   expect(result).to.be.equal();
-      // });
-      //
+      it('should return 0 if nothing is passed', function(){
+        let result = window.calc.factor();
+        expect(result).to.be.a('number');
+        expect(result).to.be.equal(0);
+      });
+      it('should return the first arg if more than one is passed ', function(){
+        let result = window.calc.factor(2, 3);
+        expect(result).to.be.a('number');
+        expect(result).to.be.equal(2);
+      });
+      it('should return string 3 as 6', function(){
+        let result = window.calc.factor('3');
+        expect(result).to.be.a('number');
+        expect(result).to.be.equal(6);
+      });
 
 
 
