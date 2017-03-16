@@ -29,8 +29,8 @@
      * @param  {Number} topNumber  The number to get the factorial value for
      * @return {Number}            The final factorial value
      */
-    function factorial(topNumber) {
-        const total = 0;
+    window.calc.factor = function factorial(topNumber) {
+        let total = 1;
 
         if (typeof(topNumber) !== 'number') {
             return 0;
@@ -41,6 +41,6 @@
         }
 
         return total;
-    }
+    };
 
 })();

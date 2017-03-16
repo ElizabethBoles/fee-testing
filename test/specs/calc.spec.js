@@ -10,8 +10,6 @@
         expect(result).to.be.a('number');
         expect(result).to.equal(2);
       });
-
-
       it('should return 1 if the number one is passed', function(){
         let result = window.calc.sum([1]);
          expect(result).to.be.a('number');
@@ -21,26 +19,28 @@
          let result = window.calc.sum(['e', 'b']);
          expect(result).to.be.NaN;
        });
+      it('should return 0 when no number or an empty array is passed', function(){
+        let result = window.calc.sum([]);
+        expect(result).to.be.a('number');
+        expect(result).to.be.equal(0);
+      });
+      //----------------2nd----------------
+      it('should return 6 if the number 3 is passed', function(){
+        let result = window.calc.factor(4);
+        expect(result).to.be.a('number');
+        expect(result).to.be.equal(24);
+      });
       // it('', function(){
-      //   let result = window.calc.sum([]);
+      //   let result = window.calc.factor([]);
       //   expect(result).to.be.a('number');
       //   expect(result).to.be.equal();
       // });
       // it('', function(){
-      //   let result = window.calc.sum([]);
+      //   let result = window.calc.factor([]);
       //   expect(result).to.be.a('number');
       //   expect(result).to.be.equal();
       // });
-      // it('', function(){
-      //   let result = window.calc.sum([]);
-      //   expect(result).to.be.a('number');
-      //   expect(result).to.be.equal();
-      // });
-      // it('', function(){
-      //   let result = window.calc.sum([]);
-      //   expect(result).to.be.a('number');
-      //   expect(result).to.be.equal();
-      // });
+      //
 
 
 
